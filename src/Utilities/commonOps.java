@@ -5,7 +5,7 @@ import static org.junit.Assert.fail;
 
 public class commonOps extends base
 {
-    public void verifyElementExist(WebElement elem)
+    public void verifyElementExists(WebElement elem)
     {
         try {
             elem.isDisplayed();
@@ -14,7 +14,6 @@ public class commonOps extends base
         catch (Exception e)
         {
             System.out.println("Element NOT Exist!");
-            System.out.println("Element NOT Exist222!");
             fail("Element NOT Exist!");
         }
     }
