@@ -24,10 +24,7 @@ public class sanitySearchFromHomePage extends base
     @BeforeClass
     public static void startSession() throws IOException, SAXException, ParserConfigurationException {
         System.setProperty("webdriver.chrome.driver", "D:\\AutomationDev\\Drivers\\ChromeDriver\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get(getData("URL"));
-
+        initBrowser(getData("BrowserType"));
         mp = PageFactory.initElements(driver, mainPage.class);
         sr = PageFactory.initElements(driver, searchResults.class);
     }

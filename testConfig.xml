@@ -1,4 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<environment> 
+<environment>
+  <BrowserType>chrome</BrowserType>
   <URL>http://www.iggmaster.com</URL>
+  <ChromeDriverPath>/Users/igorgoldshmidt/dev/SeleniumDrivers/</ChromeDriverPath>
+    <FFDriverPath>/Users/igorgoldshmidt/dev/SeleniumDrivers/</FFDriverPath>
+
+    <!-- OS Config -->
+    <osType>mac</osType>
 </environment>
